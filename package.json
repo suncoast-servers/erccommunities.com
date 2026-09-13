@@ -1,0 +1,13 @@
+{
+  "name": "erccommunities",
+  "private": true,
+  "description": "Static snapshot of erccommunities.com for Cloudflare Pages",
+  "scripts": {
+    "snapshot": "python scripts/snapshot_site.py && python scripts/clean_snapshot.py",
+    "dev": "wrangler pages dev snapshot",
+    "deploy": "wrangler pages deploy snapshot --project-name erccommunities"
+  },
+  "devDependencies": {
+    "wrangler": "^4.45.0"
+  }
+}
