@@ -11,7 +11,7 @@
     position: "right",
     locale: "en",
     type: "standard",
-    launcherTitle: "Talk to a person"
+    launcherTitle: "Chat with ERC Communities"
   };
   var g = document.createElement("script");
   var s = document.getElementsByTagName("script")[0];
