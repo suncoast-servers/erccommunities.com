@@ -681,6 +681,25 @@ var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof H
 }
 </style>
 
+<!-- Suncoast Chatwoot (default off; enabled via Cloudflare Pages env vars) -->
+<link rel="stylesheet" href="/chatwoot-polish.css" />
+<script>
+  window.CHATWOOT_CONFIG = window.CHATWOOT_CONFIG || {
+    enabled: false,
+    baseUrl: "https://support.suncoastservers.com",
+    websiteToken: "",
+    launcherTitle: "Chat with ERC",
+    widgetColor: "#2563eb",
+    brandName: "ERC Communities",
+    polishCssUrl: "/chatwoot-polish.css",
+    showNudge: true,
+    greetingLines: [
+      "A person answers this chat, with AI as backup.",
+      "Our AI gives faster first answers — a person still reads every message.",
+    ],
+  };
+</script>
+<script src="/chatwoot.js" defer></script>
 </body>
 </html>
 
